@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lsq+muLS6ENzvv/Wt1M8UMndVPnb81uG1JLmzTRzeopEKPiDbF/13a968S2iFXt7KwDizjBR+TCzZXSv4eQP1A==",
+  "dgSpecHash": "BzS8TfJWm/PSYEkuXd2xn8RhCit/gMqOAV5uvBUw+kn+Yvgpc6bMhE9Dm1I4/JG6Cc0nlaHUr6/cF8PNsiDzcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\plato\\OneDrive\\Рабочий стол\\BMSTU\\1m sem\\rsoi-2022-lab1-ci-cd-platosha-git\\People\\People\\People.csproj",
+  "projectFilePath": "C:\\Users\\plato\\OneDrive\\Рабочий стол\\BMSTU\\1m sem\\RSOI\\People\\People\\People.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\plato\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512",
     "C:\\Users\\plato\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

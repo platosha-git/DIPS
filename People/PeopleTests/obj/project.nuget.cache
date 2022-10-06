@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gEL3OTrJUc6Jyf4alYfeIf4CYUbejycTx26cku4+c5UdWEnqyy9syH7ddCyrzw3G1lyI6HBSq77dgmF2rNaOzg==",
+  "dgSpecHash": "0R4lSuqm6QwCZ1JXjbQr5JoMrLISqh8LlS3Y7AuXvYgTaRqan+T0yVS8kkgjDnYVEsHIZ9mMJUJuX+nIjpfN/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\plato\\OneDrive\\Рабочий стол\\BMSTU\\1m sem\\rsoi-2022-lab1-ci-cd-platosha-git\\People\\PeopleTests\\PeopleTests.csproj",
+  "projectFilePath": "C:\\Users\\plato\\OneDrive\\Рабочий стол\\BMSTU\\1m sem\\RSOI\\People\\PeopleTests\\PeopleTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\plato\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
     "C:\\Users\\plato\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
