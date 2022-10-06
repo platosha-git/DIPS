@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>People</name>
+    </assembly>
+    <members>
+        <member name="M:People.APIControllers.ApiPersonController.GetAllPeople">
+            <summary>Get all people</summary>
+            <returns>People information</returns>
+            <response code="200">People found</response>
+            <response code="204">No people</response>
+        </member>
+        <member name="M:People.APIControllers.ApiPersonController.GetPersonById(System.Int32)">
+            <summary>Person by ID</summary>
+            <returns>Person information</returns>
+            <response code="200">Person found</response>
+            <response code="404">No person</response>
+        </member>
+        <member name="M:People.APIControllers.ApiPersonController.AddPerson(People.ModelsDTO.PersonDTO)">
+            <summary>Adding person</summary>
+            <param name="personDTO">Person to add</param>
+            <returns>Added person</returns>
+            <response code="201">Person added</response>
+            <response code="409">Constraint error</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:People.APIControllers.ApiPersonController.UpdatePerson(System.Int32,People.ModelsDTO.PersonDTO)">
+            <summary>Updating person</summary>
+            <param name="personDTO">Person to update</param>
+            <returns>Updated person</returns>
+            <response code="200">Person updated</response>
+            <response code="409">Constraint error</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:People.APIControllers.ApiPersonController.DeletePerson(System.Int32)">
+            <summary>Removing person by ID</summary>
+            <returns>Removed person</returns>
+            <response code="200">Person removed</response>
+            <response code="404">No person</response>
+            <response code="500">Internal server error</response>
+        </member>
+    </members>
+</doc>

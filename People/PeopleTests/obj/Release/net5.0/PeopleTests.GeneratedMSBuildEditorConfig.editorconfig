@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = PeopleTests
+build_property.ProjectDir = C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\PeopleTests\

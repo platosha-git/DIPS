@@ -1,0 +1,111 @@
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\appsettings.json
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\People.exe
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\People.deps.json
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\People.runtimeconfig.json
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\People.runtimeconfig.dev.json
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\People.dll
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\ref\People.dll
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\People.pdb
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\plato\RiderProjects\People\People\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.csproj.AssemblyReference.cache
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.AssemblyInfoInputs.cache
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.AssemblyInfo.cs
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.csproj.CoreCompileInputs.cache
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\staticwebassets\People.StaticWebAssets.Manifest.cache
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\staticwebassets\People.StaticWebAssets.xml
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\scopedcss\bundle\People.styles.css
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.RazorTargetAssemblyInfo.cache
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.csproj.CopyComplete
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.dll
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\ref\People.dll
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.pdb
+C:\Users\plato\RiderProjects\People\People\obj\Debug\net5.0\People.genruntimeconfig.cache
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\appsettings.json
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\People.exe
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\People.deps.json
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\People.runtimeconfig.json
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\People.runtimeconfig.dev.json
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\People.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\ref\People.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\People.pdb
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.csproj.AssemblyReference.cache
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.AssemblyInfoInputs.cache
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.AssemblyInfo.cs
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.csproj.CoreCompileInputs.cache
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\staticwebassets\People.StaticWebAssets.Manifest.cache
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\staticwebassets\People.StaticWebAssets.xml
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\scopedcss\bundle\People.styles.css
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.RazorTargetAssemblyInfo.cache
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.csproj.CopyComplete
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\ref\People.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.pdb
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\obj\Debug\net5.0\People.genruntimeconfig.cache
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\EntityFramework.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Humanizer.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Npgsql.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Serilog.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Serilog.AspNetCore.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Serilog.Sinks.File.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\Swashbuckle.AspNetCore.Newtonsoft.dll
+C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\rsoi-2022-lab1-ci-cd-platosha-git\People\People\bin\Debug\net5.0\People.xml
