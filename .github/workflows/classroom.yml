@@ -20,6 +20,9 @@ jobs:
         uses: actions/setup-dotnet@v2
         with: 
           dotenet-version: 5.0.x
+      
+      - name: Build
+      - run: dotnet restore "People/People/People.csproj"
 
       - name: Run API Tests
         uses: matt-ball/newman-action@master
