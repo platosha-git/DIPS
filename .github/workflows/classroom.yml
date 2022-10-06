@@ -21,22 +21,22 @@ jobs:
         with: 
           dotnet-version: 5.0.x
       
-      #- name: Build
-      #  run: dotnet restore "People/People/People.csproj"
+      - name: Build
+        run: dotnet restore "People/People/People.csproj"
 
-      #- name: Publish
-      #  run: dotnet publish "People/People.csproj" -c Release -o /app/publish --no-restore
+      - name: Publish
+        run: dotnet publish "People/People/People.csproj" -c Release -o /app/publish --no-restore
       
-      #- name: Test
-      #  run: dotnet test "People/PeopleTests/PeopleTests.csproj" --no-restore --verbosity normal
+      - name: Test
+        run: dotnet test "People/PeopleTests/PeopleTests.csproj" --no-restore
       
-      #- name: Upload dotnet test results
-      #  uses: actions/upload-artifact@v3
-      #  with:
-      #    name: dotnet-results
-      #    path: TestResults
-      #  # Use always() to always run this step to publish test results when there are test failures
-      #  if: ${{ always() }}
+      - name: Upload dotnet test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: dotnet-results
+          path: TestResults
+        # Use always() to always run this step to publish test results when there are test failures
+        if: ${{ always() }}
       
       - name: Deploy project
         uses: akhileshns/heroku-deploy@v3.4.6
