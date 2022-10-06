@@ -25,7 +25,7 @@ jobs:
         run: dotnet restore "People/People/People.csproj"
 
       - name: Publish
-        run: dotnet publish "People/People/People.csproj" -c Release -o /app/publish --no-restore
+        run: dotnet publish "People/People/People.csproj" -c Release -o publish --no-restore
       
       - name: Test
         run: dotnet test "People/PeopleTests/PeopleTests.csproj" --no-restore
