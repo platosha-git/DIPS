@@ -25,10 +25,10 @@ jobs:
         run: dotnet restore "People/People/People.csproj"
 
       - name: Publish
-        run: dotnet publish "People/People.csproj" -c Release -o /app/publish
+        run: dotnet publish "People/People.csproj" -c Release -o /app/publish --no-restore
       
       - name: Test
-        run: dotnet test "People/PeopleTests/PeopleTests.csproj"
+        run: dotnet test "People/PeopleTests/PeopleTests.csproj" --no-restore --verbosity normal
       
       - name: Upload dotnet test results
         uses: actions/upload-artifact@v3
