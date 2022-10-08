@@ -109,10 +109,10 @@ namespace People.APIControllers
         [ProducesResponseType(StatusCodes.Status409Conflict)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult UpdatePerson(
-            [FromRoute(Name = "personId")] int personID, 
+            [FromRoute(Name = "personId")] int personId, 
             [FromBody] PersonDTO personDTO)
         {
-            Person person = personDTO.GetPerson(personID);
+            Person person = personDTO.GetPerson(personId);
             ExitCode result = _personController.UpdatePerson(person);
             
             if (result == ExitCode.Constraint) 

@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 
 WORKDIR /app
-COPY --from=publish publish/ .
+COPY publish/ .
 ENTRYPOINT ["dotnet", "People.dll"]
