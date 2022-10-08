@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,7 +22,8 @@ namespace People
                 .ConfigureWebHostDefaults(webBuilder => 
                 { webBuilder
                     .UseStartup<Startup>()
-                    .UseUrls($"http://localhost:{configuration.GetValue<int>("Port")}"); 
+                    //.UseUrls($"http://localhost:{configuration.GetValue<int>("Port")}");
+                    .UseUrls($"http://*" + Environment.GetEnvironmentVariable("Port")); 
                 }).ConfigureAppConfiguration((context, builder) =>
                     builder.SetBasePath(Directory.GetCurrentDirectory())
                         .AddJsonFile("appsettings.json")
