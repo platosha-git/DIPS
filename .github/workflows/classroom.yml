@@ -29,6 +29,14 @@ jobs:
       
       - name: Test
         run: dotnet test "People/PeopleTests/PeopleTests.csproj" --no-restore
+
+      - name: Upload dotnet test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: dotnet-results
+          path: TestResults
+        # Use always() to always run this step to publish test results when there are test failures
+        if: ${{ always() }}
       
       - name: Deploy project
         uses: akhileshns/heroku-deploy@v3.4.6
