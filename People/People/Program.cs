@@ -19,10 +19,11 @@ namespace People
 
         public static IHostBuilder CreateHostBuilder(string[] args, IConfiguration configuration) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder => 
-                { webBuilder
-                    .UseStartup<Startup>()
-                    .UseUrls($"http://*:{configuration.GetValue<int>("Port")}");
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder
+                        .UseStartup<Startup>()
+                        .UseUrls("http://*:" + Environment.GetEnvironmentVariable("PORT"));
                 }).ConfigureAppConfiguration((context, builder) =>
                     builder.SetBasePath(Directory.GetCurrentDirectory())
                         .AddJsonFile("appsettings.json")
