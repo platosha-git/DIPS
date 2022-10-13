@@ -43,7 +43,7 @@ namespace People
                 .Build();
             
             AddDbContext(services, config);
-            //AddLogging(services, config);
+            AddLogging(services, config);
             
             services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddScoped<PersonController>();
