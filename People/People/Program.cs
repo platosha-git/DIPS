@@ -23,7 +23,7 @@ namespace People
                 {
                     webBuilder
                         .UseStartup<Startup>()
-                        .UseUrls("http://*:" + Environment.GetEnvironmentVariable("PORT"));
+                        .UseUrls($"http://*:{configuration.GetValue<int>("Port")}");
                 }).ConfigureAppConfiguration((context, builder) =>
                     builder.SetBasePath(Directory.GetCurrentDirectory())
                         .AddJsonFile("appsettings.json")

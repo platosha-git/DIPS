@@ -1,0 +1,34 @@
+2022-10-13 20:00:43.016 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-13 20:00:43.446 +03:00 [INF] Now listening on: http://[::]:80
+2022-10-13 20:00:43.446 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-13 20:00:43.446 +03:00 [INF] Hosting environment: Development
+2022-10-13 20:00:43.447 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\People\People
+2022-10-13 20:02:24.050 +03:00 [INF] Application is shutting down...
+2022-10-13 20:03:12.507 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-13 20:03:12.756 +03:00 [INF] Now listening on: http://[::]:80
+2022-10-13 20:03:12.756 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-13 20:03:12.756 +03:00 [INF] Hosting environment: Development
+2022-10-13 20:03:12.757 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\People\People
+2022-10-13 20:03:47.260 +03:00 [INF] Application is shutting down...
+2022-10-13 20:06:56.485 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-13 20:06:56.698 +03:00 [INF] Now listening on: http://localhost:5001
+2022-10-13 20:06:56.698 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-13 20:06:56.698 +03:00 [INF] Hosting environment: Development
+2022-10-13 20:06:56.698 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\People\People
+2022-10-13 20:06:57.256 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger - -
+2022-10-13 20:06:57.308 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger - - - 301 0 - 55.1630ms
+2022-10-13 20:06:57.317 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - -
+2022-10-13 20:06:57.375 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 57.8551ms
+2022-10-13 20:06:57.629 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - -
+2022-10-13 20:06:57.839 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 209.6559ms
+2022-10-13 20:07:37.277 +03:00 [INF] Application is shutting down...
+2022-10-13 20:07:43.465 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-13 20:07:43.704 +03:00 [INF] Now listening on: http://[::]:5001
+2022-10-13 20:07:43.705 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-13 20:07:43.705 +03:00 [INF] Hosting environment: Development
+2022-10-13 20:07:43.705 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\People\People
+2022-10-13 20:07:44.043 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - -
+2022-10-13 20:07:44.161 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 123.2257ms
+2022-10-13 20:07:44.488 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - -
+2022-10-13 20:07:44.693 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 205.0094ms
+2022-10-13 20:08:21.501 +03:00 [INF] Application is shutting down...
