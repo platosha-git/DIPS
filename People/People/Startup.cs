@@ -37,13 +37,12 @@ namespace People
                 
             });
             services.AddSwaggerGenNewtonsoftSupport();
+
+            // services.AddDbContext<PeopleContext>(option => option.UseNpgsql(config["Connections:Current"]));
+            services.AddDbContext<PeopleContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             
-            IConfiguration config = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json")
-                .Build();
-            
-            AddDbContext(services, config);
-            AddLogging(services, config);
+            // AddDbContext(services, config);
+            AddLogging(services, Configuration);
             
             services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddScoped<PersonController>();
