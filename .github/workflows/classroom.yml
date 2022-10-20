@@ -45,6 +45,10 @@ jobs:
           heroku_app_name: people-lab1
           heroku_email: 15platosha@gmail.com
           usedocker: true
+
+      - name: Timeout
+        run: sleep 20s
+        shell: bash
         
       - name: Run API Tests
         uses: matt-ball/newman-action@master
