@@ -53,6 +53,12 @@ namespace People.Repositories
         {
             try
             {
+                _logger.LogInformation("Id = {Id}", obj.Id);
+                _logger.LogInformation("Name = {Name}", obj.Name);
+                _logger.LogInformation("Address = {Address}", obj.Address);
+                _logger.LogInformation("Age = {Age}", obj.Age);
+                _logger.LogInformation("Work = {Work}", obj.Work);
+                
                 _db.People.Update(obj);
                 _db.SaveChanges();
                 _logger.LogInformation("+PersonRep : Person {Number} was updated at People", obj.Id);

@@ -131,11 +131,12 @@ namespace People.APIControllers
             var userPerson = personDTO.GetPerson(id);
             FixedPatchFields(personToPatch, userPerson);
             
-            Console.WriteLine("Id = " + personToPatch.Id);
+            /*Console.WriteLine("Id = " + personToPatch.Id);
             Console.WriteLine("Name = " + personToPatch.Name);
             Console.WriteLine("Age = " + personToPatch.Age);
             Console.WriteLine("Address = " + personToPatch.Address);
             Console.WriteLine("Work = " + personToPatch.Work);
+            */
 
             ExitCode result = _personController.PatchPerson(personToPatch);
             if (result == ExitCode.Constraint) 
