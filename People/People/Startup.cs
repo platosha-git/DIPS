@@ -72,7 +72,7 @@ namespace People
         private static void AddDbContext(IServiceCollection services, IConfiguration config)
         {
             services.AddDbContext<PersonContext>(opt => 
-                opt.UseNpgsql(config.GetConnectionString("Heroku")));
+                opt.UseNpgsql(config.GetConnectionString("Local")));
         }
         
         private static void AddLogging(IServiceCollection services, IConfiguration config)

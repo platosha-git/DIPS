@@ -31,7 +31,7 @@ namespace People.ModelsDB
                 entity.ToTable("person");
 
                 entity.Property(e => e.Address)
-                    .HasMaxLength(30)
+                    .HasMaxLength(50)
                     .HasColumnName("address");
 
                 entity.Property(e => e.Age).HasColumnName("age");
@@ -40,11 +40,11 @@ namespace People.ModelsDB
 
                 entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(30)
+                    .HasMaxLength(50)
                     .HasColumnName("name");
 
                 entity.Property(e => e.Work)
-                    .HasMaxLength(30)
+                    .HasMaxLength(50)
                     .HasColumnName("work");
             });
 

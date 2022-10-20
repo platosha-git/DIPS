@@ -31,7 +31,7 @@ namespace People.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Address")
-                        .HasMaxLength(30)
+                        .HasMaxLength(50)
                         .HasColumnType("character varying(30)")
                         .HasColumnName("address");
 
@@ -41,12 +41,12 @@ namespace People.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(30)
+                        .HasMaxLength(50)
                         .HasColumnType("character varying(30)")
                         .HasColumnName("name");
 
                     b.Property<string>("Work")
-                        .HasMaxLength(30)
+                        .HasMaxLength(50)
                         .HasColumnType("character varying(30)")
                         .HasColumnName("work");
 

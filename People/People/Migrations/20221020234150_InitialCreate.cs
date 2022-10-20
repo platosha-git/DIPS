@@ -15,10 +15,10 @@ namespace People.Migrations
                 {
                     id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    name = table.Column<string>(type: "character varying(30)", maxLength: 30, nullable: false),
+                    name = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     age = table.Column<int>(type: "integer", nullable: false),
-                    address = table.Column<string>(type: "character varying(30)", maxLength: 30, nullable: true),
-                    work = table.Column<string>(type: "character varying(30)", maxLength: 30, nullable: true)
+                    address = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: true),
+                    work = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: true)
                 },
                 constraints: table =>
                 {
