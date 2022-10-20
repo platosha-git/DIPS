@@ -1,12 +1,12 @@
-INSERT INTO Person (Personid, Firstname, Lastname, Gender, Age)
+INSERT INTO Person (Id, Name, Age, Address, Work)
 VALUES
-(1, 'Richard', 'Williams', 'M', 23),
-(2, 'Marie', 'Simmons', 'F', 31),
-(3, 'Heidi', 'Sanchez', 'M', 59),
-(4, 'Christina', 'Meyer', 'F', 12),
-(5, 'Joseph', 'Diaz', 'M', 7),
-(6, 'Mike', 'Garcia', 'M', 48),
-(7, 'Penny', 'Curry', 'F', 60),
-(8, 'Laura', 'Smith', 'F', 41),
-(9, 'Kenneth', 'Ramsey', 'F', 56),
-(10, 'Albert', 'Owens', 'M', 89);
+(1, 'Richard', 23, '3828 Tenakivebub Row', 'Accountant'),
+(2, 'Marie', 31, '4871 Lost Fox Centre', 'Loader'),
+(3, 'Heidi', 59, '7107 Thunder View Point', 'Pharmaceutist'),
+(4, 'Christina', 12, '2052 Heather Spring Parade', 'Editor'),
+(5, 'Joseph', 17, '1063 Rustic Turnabout', 'Trainer'),
+(6, 'Mike', 48, '1271 Burning Passage', 'Smith'),
+(7, 'Penny', 60, '8823 Jagged Timber Farm', 'Marketeer'),
+(8, 'Laura', 41, '4894 Broad Quay', 'Tailor'),
+(9, 'Kenneth', 56, '5049 Wishing Edge', 'Yardman'),
+(10, 'Albert', 89, '8453 High Route', 'Sculptor')

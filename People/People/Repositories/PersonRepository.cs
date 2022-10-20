@@ -91,7 +91,7 @@ namespace People.Repositories
         {
             try
             {
-                Person food = FindById(id);
+                var food = FindById(id);
                 _db.People.Remove(food);
                 _db.SaveChanges();
                 _logger.LogInformation("+PersonRep : Person {Number} was deleted from People", id);
