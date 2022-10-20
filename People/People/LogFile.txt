@@ -1,6 +1,0 @@
-2022-10-20 21:50:54.566 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
-2022-10-20 21:50:54.698 +03:00 [INF] Now listening on: http://[::]:80
-2022-10-20 21:50:54.700 +03:00 [INF] Application started. Press Ctrl+C to shut down.
-2022-10-20 21:50:54.701 +03:00 [INF] Hosting environment: Development
-2022-10-20 21:50:54.701 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\People\People
-2022-10-20 21:50:58.269 +03:00 [INF] Application is shutting down...

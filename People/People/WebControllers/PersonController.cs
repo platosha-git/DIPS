@@ -29,9 +29,9 @@ namespace People.WebControllers
             return _personRepository.Add(person);
         }
 
-        public ExitCode UpdatePerson(Person person)
+        public ExitCode PatchPerson(Person person)
         {
-            return _personRepository.Update(person);
+            return _personRepository.Patch(person);
         }
 
         public ExitCode DeletePersonById(int personId)

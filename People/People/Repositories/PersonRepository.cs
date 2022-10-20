@@ -49,33 +49,11 @@ namespace People.Repositories
             }
         }
 
-        public ExitCode Update(Person obj)
+        public ExitCode Patch(Person obj)
         {
             try
             {
-                Person uPerson = FindById(obj.Id);
-
-                if (obj.Name != null)
-                {
-                    uPerson.Name = obj.Name;
-                }
-
-                if (obj.Age != null)
-                {
-                    uPerson.Age = obj.Age;
-                }
-
-                if (obj.Address != null)
-                {
-                    uPerson.Address = obj.Address;
-                }
-
-                if (obj.Work != null)
-                {
-                    uPerson.Work = obj.Work;
-                }
-
-                _db.People.Update(uPerson);
+                _db.People.Update(obj);
                 _db.SaveChanges();
                 _logger.LogInformation("+PersonRep : Person {Number} was updated at People", obj.Id);
                 return ExitCode.Success;

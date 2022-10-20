@@ -82,7 +82,7 @@ namespace PeopleTests
             
             // Act
             personToUpdate.Age += 5;
-            accessObject.personRepository.Update(personToUpdate);
+            accessObject.personRepository.Patch(personToUpdate);
 
             // Assert
             var updatedPerson = accessObject.personRepository.FindById(personToUpdate.Id);
