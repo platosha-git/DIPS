@@ -11,7 +11,7 @@ using People.ModelsDB;
 namespace People.Migrations
 {
     [DbContext(typeof(PeopleContext))]
-    [Migration("20221013191628_InitialCreate")]
+    [Migration("20221020094532_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
