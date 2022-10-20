@@ -131,12 +131,12 @@ namespace People.APIControllers
 
         /// <summary>Removing person by ID</summary>
         /// <returns>Removed person</returns>
-        /// <response code="200">Person removed</response>
+        /// <response code="204">Person removed</response>
         /// <response code="404">No person</response>
         /// <response code="500">Internal server error</response>
         [HttpDelete]
         [Route("{personId:int}")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PersonDTO))]
+        [ProducesResponseType(StatusCodes.Status204NoContent, Type = typeof(PersonDTO))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult DeletePerson([FromRoute(Name = "personId")] int personID)
@@ -153,8 +153,7 @@ namespace People.APIControllers
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
             
-            var personDTO = new PersonDTO(person);
-            return Ok(personDTO);
+            return NoContent();
         }
     }
 }

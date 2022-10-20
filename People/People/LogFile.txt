@@ -153,3 +153,27 @@ CREATE TABLE "People" (
 2022-10-20 12:46:03.627 +03:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
 VALUES ('20221020094532_InitialCreate', '6.0.10');
+2022-10-20 12:54:57.607 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-10-20 12:54:57.860 +03:00 [INF] Now listening on: http://[::]:80
+2022-10-20 12:54:57.863 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-20 12:54:57.864 +03:00 [INF] Hosting environment: Development
+2022-10-20 12:54:57.864 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\People\People
+2022-10-20 12:55:17.566 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/index.html - -
+2022-10-20 12:55:17.647 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/index.html - - - 200 - text/html;charset=utf-8 83.6800ms
+2022-10-20 12:55:17.848 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - -
+2022-10-20 12:55:17.872 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/swagger/favicon-32x32.png - -
+2022-10-20 12:55:17.883 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-10-20 12:55:17.883 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/favicon-32x32.png - - - 200 628 image/png 11.1851ms
+2022-10-20 12:55:17.982 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.6050ms
+2022-10-20 12:55:34.056 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/persons - -
+2022-10-20 12:55:34.073 +03:00 [INF] Executing endpoint 'People.APIControllers.ApiPersonController.GetAllPeople (People)'
+2022-10-20 12:55:34.080 +03:00 [INF] Route matched with {action = "GetAllPeople", controller = "ApiPerson"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPeople() on controller People.APIControllers.ApiPersonController (People).
+2022-10-20 12:55:34.549 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'PeopleContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.7+5b98e4b74de93b590b44aef8dd7967c03acc433c' with options: None
+2022-10-20 12:55:35.409 +03:00 [INF] Executed DbCommand (94ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Personid", p."Age", p."Firstname", p."Gender", p."Lastname"
+FROM "People" AS p
+2022-10-20 12:55:35.421 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-10-20 12:55:35.426 +03:00 [INF] Executed action People.APIControllers.ApiPersonController.GetAllPeople (People) in 1341.6138ms
+2022-10-20 12:55:35.426 +03:00 [INF] Executed endpoint 'People.APIControllers.ApiPersonController.GetAllPeople (People)'
+2022-10-20 12:55:35.428 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/persons - - - 204 - - 1371.7790ms
+2022-10-20 12:56:08.699 +03:00 [INF] Application is shutting down...
