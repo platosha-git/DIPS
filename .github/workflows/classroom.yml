@@ -23,10 +23,6 @@ jobs:
       
       - name: Build
         run: dotnet restore "People/People/People.csproj"
-      
-      - name: Timeout
-        run: sleep 30s
-        shell: bash
 
       - name: Publish
         run: dotnet publish "People/People/People.csproj" -c Release -o publish --no-restore
@@ -49,7 +45,7 @@ jobs:
           heroku_app_name: people-lab1
           heroku_email: 15platosha@gmail.com
           usedocker: true
-
+        
       - name: Run API Tests
         uses: matt-ball/newman-action@master
         with:
