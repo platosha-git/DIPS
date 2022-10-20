@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using People.WebControllers;
@@ -85,12 +86,27 @@ namespace People.APIControllers
             return Created(header, person);
         }
 
-        void FixedPatchFields(Person person, Person fields)
+        void FixedPatchFields(Person personToPatch, Person userPerson)
         {
-            person.Name = (fields.Name == "string") ? person.Name : fields.Name;
-            person.Address = (fields.Address == "string") ? person.Address : fields.Address;
-            person.Work = (fields.Work == "string") ? person.Work : fields.Work;
-            person.Age = (fields.Age == 0) ? person.Age : fields.Age;
+            if (userPerson.Name != null && userPerson.Name != "string")
+            {
+                personToPatch.Name = userPerson.Name;
+            }
+            
+            if (userPerson.Address != null && userPerson.Address != "string")
+            {
+                personToPatch.Address = userPerson.Address;
+            }
+            
+            if (userPerson.Work != null && userPerson.Work != "string")
+            {
+                personToPatch.Work = userPerson.Work;
+            }
+
+            if (userPerson.Age > 0)
+            {
+                personToPatch.Age = userPerson.Age;
+            }
         }
 
         /// <summary>Update Person by ID</summary>
@@ -114,6 +130,12 @@ namespace People.APIControllers
             
             var userPerson = personDTO.GetPerson(id);
             FixedPatchFields(personToPatch, userPerson);
+            
+            Console.WriteLine("Id = " + personToPatch.Id);
+            Console.WriteLine("Name = " + personToPatch.Name);
+            Console.WriteLine("Age = " + personToPatch.Age);
+            Console.WriteLine("Address = " + personToPatch.Address);
+            Console.WriteLine("Work = " + personToPatch.Work);
 
             ExitCode result = _personController.PatchPerson(personToPatch);
             if (result == ExitCode.Constraint) 
