@@ -38,9 +38,9 @@ namespace People
             });
             services.AddSwaggerGenNewtonsoftSupport();
             
-            //services.AddDbContext<PersonContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("Heroku")));
+            services.AddDbContext<PersonContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             
-            AddDbContext(services, Configuration);
+            //AddDbContext(services, Configuration);
             AddLogging(services, Configuration);
             
             services.AddScoped<IPersonRepository, PersonRepository>();
