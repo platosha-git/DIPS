@@ -20,7 +20,7 @@ namespace People.ModelsDB
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=person;Username=postgres;Password=22rfrnec");
+                optionsBuilder.UseNpgsql("User ID=edvkpmgveafcrx;Password=d4d39e7740e84e3b8158af1c62ddecabc990d6d61484ec79efc47a2c4eebca1e;Server=ec2-54-75-184-144.eu-west-1.compute.amazonaws.com;Port=5432;Database=d2cpumffbe0el;SSL Mode=Require;Trust Server Certificate=true;");
             }
         }
 
