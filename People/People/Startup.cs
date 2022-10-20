@@ -39,7 +39,7 @@ namespace People
             services.AddSwaggerGenNewtonsoftSupport();
 
             // services.AddDbContext<PeopleContext>(option => option.UseNpgsql(config["Connections:Current"]));
-            services.AddDbContext<PeopleContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<PersonContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             
             // AddDbContext(services, config);
             AddLogging(services, Configuration);
@@ -74,7 +74,7 @@ namespace People
         
         private static void AddDbContext(IServiceCollection services, IConfiguration config)
         {
-            services.AddDbContext<PeopleContext>(option => option.UseNpgsql(config["Connections:Current"]));
+            services.AddDbContext<PersonContext>(option => option.UseNpgsql(config["Connections:Current"]));
         }
         
         private static void AddLogging(IServiceCollection services, IConfiguration config)

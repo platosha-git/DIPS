@@ -64,7 +64,7 @@ namespace PeopleTests
             accessObject.personRepository.Add(personToAdd);
 
             // Assert
-            var addedPerson = accessObject.personRepository.FindById(personToAdd.Personid);
+            var addedPerson = accessObject.personRepository.FindById(personToAdd.Id);
             
             Assert.NotNull(addedPerson);
             Assert.Equal(personToAdd, addedPerson);
@@ -85,7 +85,7 @@ namespace PeopleTests
             accessObject.personRepository.Update(personToUpdate);
 
             // Assert
-            var updatedPerson = accessObject.personRepository.FindById(personToUpdate.Personid);
+            var updatedPerson = accessObject.personRepository.FindById(personToUpdate.Id);
             Assert.NotNull(updatedPerson);
             Assert.Equal(personToUpdate, updatedPerson);
             
@@ -101,7 +101,7 @@ namespace PeopleTests
             AddEntity(accessObject, personToDelete);
 
             // Act
-            var id = personToDelete.Personid;
+            var id = personToDelete.Id;
             accessObject.personRepository.DeleteById(id);
 
             // Assert
@@ -115,11 +115,11 @@ namespace PeopleTests
         {
             var person = new Person()
             {
-                Personid = 1,
-                Firstname = "Test",
-                Lastname = "Pass",
-                Gender = "F",
-                Age = 1
+                Id = 1,
+                Name = "Test",
+                Age = 1,
+                Address = "Address",
+                Work = "Pass"
             };
             return person;
         }

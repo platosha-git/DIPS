@@ -8,15 +8,15 @@ namespace PeopleTests
 {
     public class PeopleAccessObject : IDisposable
     {
-        public PeopleContext peopleContext { get; }
+        public PersonContext peopleContext { get; }
         public IPersonRepository personRepository { get; }
 
         public PeopleAccessObject()
         {
-            var builder = new DbContextOptionsBuilder<PeopleContext>();
+            var builder = new DbContextOptionsBuilder<PersonContext>();
             builder.UseInMemoryDatabase("person");
 
-            peopleContext = new PeopleContext(builder.Options);
+            peopleContext = new PersonContext(builder.Options);
             personRepository = new PersonRepository(peopleContext, NullLogger<PersonRepository>.Instance);
         }
         

@@ -4,32 +4,32 @@ namespace People.ModelsDTO
 {
     public class PersonDTO
     {
-        public int Personid { get; set; }
-        public string Firstname { get; set; }
-        public string Lastname { get; set; }
-        public string Gender { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
         public int Age { get; set; }
+        public string Address { get; set; }
+        public string Work { get; set; }
 
         public PersonDTO() { }
         
         public PersonDTO(Person person)
         {
-            Personid = person.Personid;
-            Firstname = person.Firstname;
-            Lastname = person.Lastname;
-            Gender = person.Gender;
+            Id = person.Id;
+            Name = person.Name;
             Age = person.Age;
+            Address = person.Address;
+            Work = person.Work;
         }
 
-        public Person GetPerson(int personID = 0)
+        public Person GetPerson(int personId = 0)
         {
             var person = new Person()
             {
-                Personid = personID,
-                Firstname = Firstname,
-                Lastname = Lastname,
-                Gender = Gender,
-                Age = Age
+                Id = personId,
+                Name = Name,
+                Age = Age,
+                Address = Address,
+                Work = Work
             };
 
             return person;

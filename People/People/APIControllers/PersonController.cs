@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using People.WebControllers;
@@ -57,12 +56,12 @@ namespace People.APIControllers
         /// <response code="200">Person found</response>
         /// <response code="404">No person</response>
         [HttpGet]
-        [Route("{personId:int}")]
+        [Route("{Id:int}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PersonDTO))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult GetPersonById([FromRoute(Name = "personId")] int personID)
+        public IActionResult GetPersonById([FromRoute(Name = "Id")] int id)
         {
-            var person = _personController.GetPersonById(personID);
+            var person = _personController.GetPersonById(id);
             if (person is null)
             {
                 return NotFound();
@@ -92,7 +91,7 @@ namespace People.APIControllers
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
 
-            var header = $"api/v1/persons/{result.Personid}";
+            var header = $"api/v1/persons/{result.Id}";
             return Created(header, person);
         }
         

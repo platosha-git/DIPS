@@ -5,30 +5,30 @@ namespace PeopleTests
 {
     public class PersonBuilder
     {
-        private int Personid;
-        private string Firstname;
-        private string Lastname;
-        private string Gender;
+        private int Id;
+        private string Name;
         private int Age;
+        private string Address;
+        private string Work;
 
         public PersonBuilder()
         {
-            Personid = 0;
-            Firstname = string.Empty;
-            Lastname = string.Empty;
-            Gender = string.Empty;
+            Id = 0;
+            Name = string.Empty;
             Age = 0;
+            Address = string.Empty;
+            Work = string.Empty;
         }
 
         public Person Build()
         {
             var person = new Person()
             {
-                Personid = Personid,
-                Firstname = Firstname,
-                Lastname = Lastname,
-                Gender = Gender,
-                Age = Age
+                Id = Id,
+                Name = Name,
+                Age = Age,
+                Address = Address,
+                Work = Work
             };
 
             return person;
@@ -36,7 +36,7 @@ namespace PeopleTests
 
         public PersonBuilder WherePersonId(int personId)
         {
-            Personid = personId;
+            Id = personId;
             return this;
         }
 
