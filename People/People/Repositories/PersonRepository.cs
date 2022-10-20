@@ -11,10 +11,10 @@ namespace People.Repositories
         private readonly PersonContext _db;
         private readonly ILogger<PersonRepository> _logger;
 
-        public PersonRepository(PersonContext createDB, ILogger<PersonRepository> logDB)
+        public PersonRepository(PersonContext createDb, ILogger<PersonRepository> logDb)
         {
-            _db = createDB;
-            _logger = logDB;
+            _db = createDb;
+            _logger = logDb;
         }
 
         public List<Person> FindAll()
@@ -91,7 +91,7 @@ namespace People.Repositories
         {
             try
             {
-                Person food = FindById(id);
+                var food = FindById(id);
                 _db.People.Remove(food);
                 _db.SaveChanges();
                 _logger.LogInformation("+PersonRep : Person {Number} was deleted from People", id);

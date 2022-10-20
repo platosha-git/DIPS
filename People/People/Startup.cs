@@ -37,11 +37,10 @@ namespace People
                 
             });
             services.AddSwaggerGenNewtonsoftSupport();
-
-            // services.AddDbContext<PeopleContext>(option => option.UseNpgsql(config["Connections:Current"]));
-            services.AddDbContext<PersonContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             
-            // AddDbContext(services, config);
+            //services.AddDbContext<PersonContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("Heroku")));
+            
+            AddDbContext(services, Configuration);
             AddLogging(services, Configuration);
             
             services.AddScoped<IPersonRepository, PersonRepository>();
@@ -74,7 +73,8 @@ namespace People
         
         private static void AddDbContext(IServiceCollection services, IConfiguration config)
         {
-            services.AddDbContext<PersonContext>(option => option.UseNpgsql(config["Connections:Current"]));
+            services.AddDbContext<PersonContext>(opt => 
+                opt.UseNpgsql(config.GetConnectionString("Heroku")));
         }
         
         private static void AddLogging(IServiceCollection services, IConfiguration config)
