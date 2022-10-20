@@ -36,7 +36,7 @@ namespace People.APIControllers
         /// <response code="200">People found</response>
         /// <response code="204">No people</response>
         [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<Person>))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<PersonDTO>))]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult GetAllPeople()

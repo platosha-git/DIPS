@@ -39,7 +39,7 @@ namespace People
             services.AddSwaggerGenNewtonsoftSupport();
 
             // services.AddDbContext<PeopleContext>(option => option.UseNpgsql(config["Connections:Current"]));
-            services.AddDbContext<PersonContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<PersonContext>(opt => opt.UseNpgsql("User ID=edvkpmgveafcrx;Password=d4d39e7740e84e3b8158af1c62ddecabc990d6d61484ec79efc47a2c4eebca1e;Server=ec2-54-75-184-144.eu-west-1.compute.amazonaws.com;Port=5432;Database=d2cpumffbe0el;"));
             
             // AddDbContext(services, config);
             AddLogging(services, Configuration);
@@ -74,7 +74,7 @@ namespace People
         
         private static void AddDbContext(IServiceCollection services, IConfiguration config)
         {
-            services.AddDbContext<PersonContext>(option => option.UseNpgsql(config["Connections:Current"]));
+            services.AddDbContext<PersonContext>(option => option.UseNpgsql("User ID=edvkpmgveafcrx;Password=d4d39e7740e84e3b8158af1c62ddecabc990d6d61484ec79efc47a2c4eebca1e;Server=ec2-54-75-184-144.eu-west-1.compute.amazonaws.com;Port=5432;Database=d2cpumffbe0el;"));
         }
         
         private static void AddLogging(IServiceCollection services, IConfiguration config)

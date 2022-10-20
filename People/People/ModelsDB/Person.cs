@@ -1,4 +1,7 @@
-﻿namespace People.ModelsDB
+﻿using System;
+using System.Collections.Generic;
+
+namespace People.ModelsDB
 {
     public class Person
     {
