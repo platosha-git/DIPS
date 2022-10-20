@@ -4,11 +4,11 @@ namespace People.ModelsDTO
 {
     public class PersonDTO
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string Address { get; set; }
-        public string Work { get; set; }
+        private int Id { get; set; }
+        private string Name { get; set; }
+        private int Age { get; set; }
+        private string Address { get; set; }
+        private string Work { get; set; }
 
         public PersonDTO() { }
         

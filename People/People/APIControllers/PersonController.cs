@@ -102,16 +102,16 @@ namespace People.APIControllers
         /// <response code="409">Constraint error</response>
         /// <response code="500">Internal server error</response>
         [HttpPatch]
-        [Route("{personId:int}")]
+        [Route("{Id:int}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PersonDTO))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult UpdatePerson(
-            [FromRoute(Name = "personId")] int personId, 
+            [FromRoute(Name = "Id")] int id, 
             [FromBody] PersonDTO personDTO)
         {
-            Person person = personDTO.GetPerson(personId);
+            Person person = personDTO.GetPerson(id);
             ExitCode result = _personController.UpdatePerson(person);
             
             if (result == ExitCode.Constraint) 
@@ -134,19 +134,19 @@ namespace People.APIControllers
         /// <response code="404">No person</response>
         /// <response code="500">Internal server error</response>
         [HttpDelete]
-        [Route("{personId:int}")]
+        [Route("{Id:int}")]
         [ProducesResponseType(StatusCodes.Status204NoContent, Type = typeof(PersonDTO))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult DeletePerson([FromRoute(Name = "personId")] int personID)
+        public IActionResult DeletePerson([FromRoute(Name = "Id")] int id)
         {
-            var person = _personController.GetPersonById(personID);
+            var person = _personController.GetPersonById(id);
             if (person == null)
             {
                 return NotFound();
             }
             
-            ExitCode result = _personController.DeletePersonById(personID);
+            ExitCode result = _personController.DeletePersonById(id);
             if (result == ExitCode.Error)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
