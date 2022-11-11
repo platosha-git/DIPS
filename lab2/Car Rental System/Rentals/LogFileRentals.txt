@@ -140,3 +140,33 @@ File name: 'C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\la
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2022-11-10 18:15:42.792 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/favicon.ico - - - 500 - text/plain;+charset=utf-8 10.9319ms
 2022-11-10 18:15:46.107 +03:00 [INF] Application is shutting down...
+2022-11-10 18:57:07.158 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-10 18:57:07.376 +03:00 [INF] Now listening on: http://localhost:8060
+2022-11-10 18:57:07.382 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-10 18:57:07.385 +03:00 [INF] Hosting environment: Development
+2022-11-10 18:57:07.385 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\Rentals
+2022-11-10 18:57:07.964 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/index.html - -
+2022-11-10 18:57:08.121 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/index.html - - - 200 - text/html;charset=utf-8 162.5800ms
+2022-11-10 18:57:08.335 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - -
+2022-11-10 18:57:08.507 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 172.0965ms
+2022-11-10 18:57:13.041 +03:00 [INF] Application is shutting down...
+2022-11-12 00:59:44.229 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-12 00:59:44.403 +03:00 [INF] Now listening on: http://localhost:8060
+2022-11-12 00:59:44.406 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-12 00:59:44.407 +03:00 [INF] Hosting environment: Development
+2022-11-12 00:59:44.407 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\Rentals
+2022-11-12 00:59:45.814 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/index.html - -
+2022-11-12 00:59:46.001 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/index.html - - - 200 - text/html;charset=utf-8 191.0146ms
+2022-11-12 00:59:46.293 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - -
+2022-11-12 00:59:46.464 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 171.0071ms
+2022-11-12 00:59:50.596 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/api/v1/rentals - -
+2022-11-12 00:59:50.611 +03:00 [INF] Executing endpoint 'Rentals.Controllers.ApiRentalsController.GetAllCars (Rentals)'
+2022-11-12 00:59:50.622 +03:00 [INF] Route matched with {action = "GetAllCars", controller = "ApiRentals"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCars() on controller Rentals.Controllers.ApiRentalsController (Rentals).
+2022-11-12 00:59:51.631 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r.id, r.car_uid, r.date_from, r.date_to, r.payment_uid, r.rental_uid, r.status, r.username
+FROM rental AS r
+2022-11-12 00:59:51.685 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Rentals.ModelsDB.Rental, Rentals, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-12 00:59:51.714 +03:00 [INF] Executed action Rentals.Controllers.ApiRentalsController.GetAllCars (Rentals) in 1087.918ms
+2022-11-12 00:59:51.715 +03:00 [INF] Executed endpoint 'Rentals.Controllers.ApiRentalsController.GetAllCars (Rentals)'
+2022-11-12 00:59:51.718 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/api/v1/rentals - - - 200 2661 application/json;+charset=utf-8 1121.3099ms
+2022-11-12 01:00:00.882 +03:00 [INF] Application is shutting down...
