@@ -1,6 +1,8 @@
 ﻿using System.Reflection;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Cars.Repositories;
+using Rentals.Repositories;
+using Payments.Repositories;
 using Serilog;
 
 namespace APIGateway
@@ -20,7 +22,7 @@ namespace APIGateway
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo {Title = "APIGateway", Version = "v1"});
+                c.SwaggerDoc("v1", new OpenApiInfo {Title = "Gateway", Version = "v1"});
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
@@ -28,12 +30,8 @@ namespace APIGateway
             });
             services.AddSwaggerGenNewtonsoftSupport();
 
-            //AddDbContext(services, Configuration);
+            AddHttpClients(services);
             AddLogging(services, Configuration);
-            
-            //services.AddScoped<ICarsRepository, CarsRepository>();
-            //services.AddScoped<CarsWebController>();
-            services.AddHttpClient();
 
             services.AddControllersWithViews()
                 .AddNewtonsoftJson(options =>
@@ -49,24 +47,22 @@ namespace APIGateway
                 app.UseDeveloperExceptionPage();
             }
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cars v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gateway v1"));
 
             //app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
+        }
 
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-        }
-        
-        /*private static void AddDbContext(IServiceCollection services, IConfiguration config)
+        private static void AddHttpClients(IServiceCollection services)
         {
-            services.AddDbContext<CarsContext>(opt => 
-                opt.UseNpgsql(config.GetConnectionString("Local")));
+            services.AddHttpClient<ICarsRepository, CarsRepository>();
+            services.AddHttpClient<IPaymentsRepository, PaymentsRepository>();
+            services.AddHttpClient<IRentalsRepository, RentalsRepository>();    
         }
-        */
-        
+
         private static void AddLogging(IServiceCollection services, IConfiguration config)
         {
             var log = new LoggerConfiguration()

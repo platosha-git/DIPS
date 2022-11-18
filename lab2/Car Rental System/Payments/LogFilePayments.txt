@@ -190,3 +190,33 @@ FROM payment AS p
 2022-11-11 23:20:09.276 +03:00 [INF] Executed endpoint 'Payments.Controllers.ApiPaymentsController.GetAllPayments (Payments)'
 2022-11-11 23:20:09.281 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8050/api/v1/payments - - - 200 941 application/json;+charset=utf-8 1981.9828ms
 2022-11-11 23:20:17.335 +03:00 [INF] Application is shutting down...
+2022-11-15 13:07:30.255 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-15 13:07:30.553 +03:00 [INF] Now listening on: http://localhost:8050
+2022-11-15 13:07:30.561 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-15 13:07:30.563 +03:00 [INF] Hosting environment: Development
+2022-11-15 13:07:30.563 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\Payments
+2022-11-15 13:07:30.877 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8050/swagger/index.html - -
+2022-11-15 13:07:31.098 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8050/swagger/index.html - - - 200 - text/html;charset=utf-8 227.2796ms
+2022-11-15 13:07:31.442 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8050/swagger/v1/swagger.json - -
+2022-11-15 13:07:31.620 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8050/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.4283ms
+2022-11-15 13:08:22.794 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8050/api/v1/payments - -
+2022-11-15 13:08:22.822 +03:00 [INF] Executing endpoint 'Payments.Controllers.ApiPaymentsController.GetAllPayments (Payments)'
+2022-11-15 13:08:22.841 +03:00 [INF] Route matched with {action = "GetAllPayments", controller = "ApiPayments"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPayments() on controller Payments.Controllers.ApiPaymentsController (Payments).
+2022-11-15 13:08:24.453 +03:00 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.payment_uid, p.price, p.status
+FROM payment AS p
+2022-11-15 13:08:24.556 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Payments.ModelsDB.Payment, Payments, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-15 13:08:24.610 +03:00 [INF] Executed action Payments.Controllers.ApiPaymentsController.GetAllPayments (Payments) in 1760.5789ms
+2022-11-15 13:08:24.611 +03:00 [INF] Executed endpoint 'Payments.Controllers.ApiPaymentsController.GetAllPayments (Payments)'
+2022-11-15 13:08:24.618 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8050/api/v1/payments - - - 200 941 application/json;+charset=utf-8 1823.2666ms
+2022-11-15 13:09:56.787 +03:00 [INF] Application is shutting down...
+2022-11-15 13:13:21.993 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-15 13:13:22.196 +03:00 [INF] Now listening on: http://localhost:8050
+2022-11-15 13:13:22.201 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-15 13:13:22.203 +03:00 [INF] Hosting environment: Development
+2022-11-15 13:13:22.203 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\Payments
+2022-11-15 13:13:22.563 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8050/swagger/index.html - -
+2022-11-15 13:13:22.730 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8050/swagger/index.html - - - 200 - text/html;charset=utf-8 169.6362ms
+2022-11-15 13:13:22.967 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8050/swagger/v1/swagger.json - -
+2022-11-15 13:13:23.101 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8050/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.1250ms
+2022-11-15 13:18:42.135 +03:00 [INF] Application is shutting down...

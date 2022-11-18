@@ -170,3 +170,23 @@ FROM rental AS r
 2022-11-12 00:59:51.715 +03:00 [INF] Executed endpoint 'Rentals.Controllers.ApiRentalsController.GetAllCars (Rentals)'
 2022-11-12 00:59:51.718 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/api/v1/rentals - - - 200 2661 application/json;+charset=utf-8 1121.3099ms
 2022-11-12 01:00:00.882 +03:00 [INF] Application is shutting down...
+2022-11-15 13:08:14.608 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-15 13:08:14.814 +03:00 [INF] Now listening on: http://localhost:8060
+2022-11-15 13:08:14.818 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-15 13:08:14.820 +03:00 [INF] Hosting environment: Development
+2022-11-15 13:08:14.820 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\Rentals
+2022-11-15 13:08:15.451 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/index.html - -
+2022-11-15 13:08:15.650 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/index.html - - - 200 - text/html;charset=utf-8 204.8359ms
+2022-11-15 13:08:15.966 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - -
+2022-11-15 13:08:16.113 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.9269ms
+2022-11-15 13:09:56.798 +03:00 [INF] Application is shutting down...
+2022-11-15 13:13:11.674 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-15 13:13:11.844 +03:00 [INF] Now listening on: http://localhost:8060
+2022-11-15 13:13:11.848 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-15 13:13:11.849 +03:00 [INF] Hosting environment: Development
+2022-11-15 13:13:11.849 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\Rentals
+2022-11-15 13:13:12.204 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/index.html - -
+2022-11-15 13:13:12.368 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/index.html - - - 200 - text/html;charset=utf-8 169.1079ms
+2022-11-15 13:13:12.606 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - -
+2022-11-15 13:13:12.766 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 160.7699ms
+2022-11-15 13:18:42.122 +03:00 [INF] Application is shutting down...

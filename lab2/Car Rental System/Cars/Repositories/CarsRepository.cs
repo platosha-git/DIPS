@@ -1,4 +1,6 @@
 ﻿using Cars.ModelsDB;
+using Cars.ModelsDTO;
+using Microsoft.EntityFrameworkCore;
 
 namespace Cars.Repositories
 {
@@ -13,9 +15,13 @@ namespace Cars.Repositories
             _logger = logDb;
         }
 
-        public List<Car> FindAll()
+        public async Task<List<Car>> FindAll(int page, int size)
         {
-            var cars = _db.Cars.ToList();
+            var cars = await _db.Cars
+                .OrderBy(x => x.Price)
+                .Skip((page - 1) * size)
+                .Take(size)
+                .ToListAsync();
             return cars;
         }
 

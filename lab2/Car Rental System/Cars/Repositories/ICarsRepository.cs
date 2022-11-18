@@ -1,4 +1,5 @@
 ﻿using Cars.ModelsDB;
+using Cars.ModelsDTO;
 
 namespace Cars.Repositories
 {
@@ -10,6 +11,6 @@ namespace Cars.Repositories
     
     public interface ICarsRepository
     {
-        List<Car> FindAll();
+        Task<List<Car>> FindAll(int page, int size);
     }
 }
