@@ -1,8 +1,5 @@
 ﻿using System.Reflection;
 using Microsoft.OpenApi.Models;
-using Cars.Repositories;
-using Rentals.Repositories;
-using Payments.Repositories;
 using Serilog;
 
 namespace APIGateway
@@ -59,8 +56,8 @@ namespace APIGateway
         private static void AddHttpClients(IServiceCollection services)
         {
             services.AddHttpClient<ICarsRepository, CarsRepository>();
-            services.AddHttpClient<IPaymentsRepository, PaymentsRepository>();
-            services.AddHttpClient<IRentalsRepository, RentalsRepository>();    
+            // services.AddHttpClient<IPaymentsRepository, PaymentsRepository>();
+            // services.AddHttpClient<IRentalsRepository, RentalsRepository>();    
         }
 
         private static void AddLogging(IServiceCollection services, IConfiguration config)

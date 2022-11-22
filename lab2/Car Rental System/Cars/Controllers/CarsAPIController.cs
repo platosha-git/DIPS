@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Cars.ModelsDB;
 using Microsoft.AspNetCore.Mvc;
-using Cars.ModelsDTO;
+using ModelsDTO.Cars;
 
 namespace Cars.Controllers
 {
@@ -21,7 +21,17 @@ namespace Cars.Controllers
             List<CarsDTO> lCarsDTO = new List<CarsDTO>();
             foreach (var car in lCars)
             {
-                CarsDTO carDTO = new CarsDTO(car);
+                CarsDTO carDTO = new CarsDTO()
+                {
+                    CarUid = car.CarUid,
+                    Brand = car.Brand,
+                    Model = car.Model, 
+                    RegistrationNumber = car.RegistrationNumber,
+                    Power = car.Power,
+                    Price = car.Price,
+                    Type = car.Type,
+                    Availability = car.Availability
+                };
                 lCarsDTO.Add(carDTO);
             }
 
@@ -35,9 +45,10 @@ namespace Cars.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PaginationCarsDTO))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> GetAllCars([Range(1, int.MaxValue)] int page, [Range(1, 100)] int size)
+        public async Task<IActionResult> GetAllCars([Range(1, int.MaxValue)] int page, [Range(1, 100)] int size, bool showAll)
         {
-            var cars = await _carsController.GetAllCars(page, size);
+            var cars = (showAll) ? await _carsController.GetAllCars(page, size) : 
+                    await _carsController.GetAvailableCars(page, size);
 
             var response = new PaginationCarsDTO()
             {

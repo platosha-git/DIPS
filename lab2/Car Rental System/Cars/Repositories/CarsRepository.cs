@@ -1,5 +1,4 @@
 ﻿using Cars.ModelsDB;
-using Cars.ModelsDTO;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cars.Repositories
@@ -18,6 +17,17 @@ namespace Cars.Repositories
         public async Task<List<Car>> FindAll(int page, int size)
         {
             var cars = await _db.Cars
+                .OrderBy(x => x.Price)
+                .Skip((page - 1) * size)
+                .Take(size)
+                .ToListAsync();
+            return cars;
+        }
+        
+        public async Task<List<Car>> FindAvailable(int page, int size)
+        {
+            var cars = await _db.Cars
+                .Where(x => x.Availability == true)
                 .OrderBy(x => x.Price)
                 .Skip((page - 1) * size)
                 .Take(size)

@@ -39,9 +39,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Cars\Cars.csproj" />
-      <ProjectReference Include="..\Payments\Payments.csproj" />
-      <ProjectReference Include="..\Rentals\Rentals.csproj" />
+      <ProjectReference Include="..\ModelsDTO2\ModelsDTO2.csproj" />
+      <ProjectReference Include="..\ModelsDTO\ModelsDTO.csproj" />
     </ItemGroup>
 
 </Project>
