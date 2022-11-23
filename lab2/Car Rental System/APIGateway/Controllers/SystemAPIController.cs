@@ -8,11 +8,11 @@ namespace APIGateway.Controllers
     [Route("/api/v1/cars")]
     public class SystemAPIController : ControllerBase
     {
-        private readonly CarsService _carsController;
+        private readonly CarsRepository _carsRepository;
 
-        public SystemAPIController(CarsService carsController)
+        public SystemAPIController(CarsRepository carsRepository)
         {
-            _carsController = carsController;
+            _carsRepository = carsRepository;
         }
 
         /// <summary>Get all Cars</summary>
@@ -23,7 +23,7 @@ namespace APIGateway.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetAllCars([Range(1, 10)] int page, [Range(1, 10)] int size, bool showAll)
         {
-            var response = await _carsController.GetAllCars(page, size, showAll);
+            var response = await _carsRepository.FindAll(page, size, showAll);
             return Ok(response);
         }
     }

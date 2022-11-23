@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using APIGateway.Controllers;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
@@ -28,7 +27,7 @@ namespace APIGateway
             });
             services.AddSwaggerGenNewtonsoftSupport();
             
-            services.AddScoped<CarsService>();
+            services.AddScoped<CarsRepository>();
 
             AddHttpClients(services);
             AddLogging(services, Configuration);

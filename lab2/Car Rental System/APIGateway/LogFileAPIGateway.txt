@@ -439,3 +439,172 @@ System.Net.Http.HttpRequestException: Подключение не установ
 2022-11-23 14:27:24.326 +03:00 [INF] Executed endpoint 'APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway)'
 2022-11-23 14:27:24.326 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/api/v1/cars?page=1&size=10&showAll=false - - - 200 - application/json;+charset=utf-8 131.5859ms
 2022-11-23 14:27:38.809 +03:00 [INF] Application is shutting down...
+2022-11-23 14:35:24.665 +03:00 [INF] Now listening on: http://localhost:8080
+2022-11-23 14:35:24.679 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-23 14:35:24.681 +03:00 [INF] Hosting environment: Development
+2022-11-23 14:35:24.681 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\APIGateway
+2022-11-23 14:35:25.187 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/index.html - -
+2022-11-23 14:35:25.404 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/index.html - - - 200 - text/html;charset=utf-8 222.7073ms
+2022-11-23 14:35:25.583 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - -
+2022-11-23 14:35:25.756 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 172.9151ms
+2022-11-23 14:35:31.763 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/api/v1/cars?page=1&size=10&showAll=false - -
+2022-11-23 14:35:31.799 +03:00 [INF] Executing endpoint 'APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway)'
+2022-11-23 14:35:31.846 +03:00 [INF] Route matched with {action = "GetAllCars", controller = "SystemAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCars(Int32, Int32, Boolean) on controller APIGateway.Controllers.SystemAPIController (APIGateway).
+2022-11-23 14:35:31.865 +03:00 [INF] Executed action APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway) in 11.1193ms
+2022-11-23 14:35:31.867 +03:00 [INF] Executed endpoint 'APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway)'
+2022-11-23 14:35:31.957 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'APIGateway.CarsRepository' while attempting to activate 'APIGateway.Controllers.SystemAPIController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method15(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-23 14:35:31.970 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/api/v1/cars?page=1&size=10&showAll=false - - - 500 - text/plain;+charset=utf-8 207.2344ms
+2022-11-23 14:35:54.311 +03:00 [INF] Application is shutting down...
+2022-11-23 14:42:49.628 +03:00 [INF] Now listening on: http://localhost:8080
+2022-11-23 14:42:49.640 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-23 14:42:49.644 +03:00 [INF] Hosting environment: Development
+2022-11-23 14:42:49.646 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\APIGateway
+2022-11-23 14:42:50.003 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/index.html - -
+2022-11-23 14:42:50.272 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/index.html - - - 200 - text/html;charset=utf-8 272.1487ms
+2022-11-23 14:42:50.464 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - -
+2022-11-23 14:42:50.659 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 194.7821ms
+2022-11-23 14:43:00.672 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/api/v1/cars?page=1&size=10&showAll=false - -
+2022-11-23 14:43:00.712 +03:00 [INF] Executing endpoint 'APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway)'
+2022-11-23 14:43:00.750 +03:00 [INF] Route matched with {action = "GetAllCars", controller = "SystemAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCars(Int32, Int32, Boolean) on controller APIGateway.Controllers.SystemAPIController (APIGateway).
+2022-11-23 14:43:00.759 +03:00 [INF] Executed action APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway) in 3.6344ms
+2022-11-23 14:43:00.763 +03:00 [INF] Executed endpoint 'APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway)'
+2022-11-23 14:43:00.891 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'APIGateway.CarsRepository' while attempting to activate 'APIGateway.Controllers.SystemAPIController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method15(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-23 14:43:00.904 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/api/v1/cars?page=1&size=10&showAll=false - - - 500 - text/plain;+charset=utf-8 231.6379ms
+2022-11-23 14:43:11.970 +03:00 [INF] Application is shutting down...
+2022-11-23 14:44:52.405 +03:00 [INF] Now listening on: http://localhost:8080
+2022-11-23 14:44:52.423 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-23 14:44:52.425 +03:00 [INF] Hosting environment: Development
+2022-11-23 14:44:52.426 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\APIGateway
+2022-11-23 14:44:52.827 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/index.html - -
+2022-11-23 14:44:53.071 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/index.html - - - 200 - text/html;charset=utf-8 248.4734ms
+2022-11-23 14:44:53.330 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - -
+2022-11-23 14:44:53.548 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 217.6111ms
+2022-11-23 14:44:57.912 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/api/v1/cars?page=1&size=10&showAll=false - -
+2022-11-23 14:44:57.948 +03:00 [INF] Executing endpoint 'APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway)'
+2022-11-23 14:44:57.994 +03:00 [INF] Route matched with {action = "GetAllCars", controller = "SystemAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCars(Int32, Int32, Boolean) on controller APIGateway.Controllers.SystemAPIController (APIGateway).
+2022-11-23 14:44:58.003 +03:00 [INF] Executed action APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway) in 1.4965ms
+2022-11-23 14:44:58.006 +03:00 [INF] Executed endpoint 'APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway)'
+2022-11-23 14:44:58.057 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'APIGateway.CarsRepository' while attempting to activate 'APIGateway.Controllers.SystemAPIController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method15(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-23 14:44:58.064 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/api/v1/cars?page=1&size=10&showAll=false - - - 500 - text/plain;+charset=utf-8 152.0694ms
+2022-11-23 14:45:07.903 +03:00 [INF] Application is shutting down...
+2022-11-23 14:45:47.910 +03:00 [INF] Now listening on: http://localhost:8080
+2022-11-23 14:45:47.925 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-23 14:45:47.927 +03:00 [INF] Hosting environment: Development
+2022-11-23 14:45:47.927 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\APIGateway
+2022-11-23 14:45:48.652 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/index.html - -
+2022-11-23 14:45:48.910 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/index.html - - - 200 - text/html;charset=utf-8 263.8828ms
+2022-11-23 14:45:49.119 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - -
+2022-11-23 14:45:49.319 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 199.1150ms
+2022-11-23 14:45:53.158 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/api/v1/cars?page=1&size=10&showAll=false - -
+2022-11-23 14:45:53.191 +03:00 [INF] Executing endpoint 'APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway)'
+2022-11-23 14:45:53.230 +03:00 [INF] Route matched with {action = "GetAllCars", controller = "SystemAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCars(Int32, Int32, Boolean) on controller APIGateway.Controllers.SystemAPIController (APIGateway).
+2022-11-23 14:45:53.290 +03:00 [INF] Start processing HTTP request GET http://localhost:8070/api/v1/cars/?page=1&size=10&showAll=False
+2022-11-23 14:45:53.293 +03:00 [INF] Sending HTTP request GET http://localhost:8070/api/v1/cars/?page=1&size=10&showAll=False
+2022-11-23 14:45:57.490 +03:00 [INF] Executed action APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway) in 4252.7791ms
+2022-11-23 14:45:57.493 +03:00 [INF] Executed endpoint 'APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway)'
+2022-11-23 14:45:57.561 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. (localhost:8070)
+ ---> System.Net.Sockets.SocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at APIGateway.CarsRepository.FindAll(Int32 page, Int32 size, Boolean showAll) in C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\APIGateway\Repositories\CarsRepository.cs:line 19
+   at APIGateway.Controllers.SystemAPIController.GetAllCars(Int32 page, Int32 size, Boolean showAll) in C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\APIGateway\Controllers\SystemAPIController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-23 14:45:57.574 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/api/v1/cars?page=1&size=10&showAll=false - - - 500 - text/plain;+charset=utf-8 4415.2753ms
+2022-11-23 14:46:10.686 +03:00 [INF] Application is shutting down...
+2022-11-23 14:46:16.223 +03:00 [INF] Now listening on: http://localhost:8080
+2022-11-23 14:46:16.239 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-23 14:46:16.240 +03:00 [INF] Hosting environment: Development
+2022-11-23 14:46:16.240 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\APIGateway
+2022-11-23 14:46:16.669 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/index.html - -
+2022-11-23 14:46:16.900 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/index.html - - - 200 - text/html;charset=utf-8 238.1807ms
+2022-11-23 14:46:17.161 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - -
+2022-11-23 14:46:17.391 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 230.8927ms
+2022-11-23 14:46:28.499 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/api/v1/cars?page=1&size=10&showAll=false - -
+2022-11-23 14:46:28.552 +03:00 [INF] Executing endpoint 'APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway)'
+2022-11-23 14:46:28.605 +03:00 [INF] Route matched with {action = "GetAllCars", controller = "SystemAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCars(Int32, Int32, Boolean) on controller APIGateway.Controllers.SystemAPIController (APIGateway).
+2022-11-23 14:46:28.655 +03:00 [INF] Start processing HTTP request GET http://localhost:8070/api/v1/cars/?page=1&size=10&showAll=False
+2022-11-23 14:46:28.657 +03:00 [INF] Sending HTTP request GET http://localhost:8070/api/v1/cars/?page=1&size=10&showAll=False
+2022-11-23 14:46:30.851 +03:00 [INF] Received HTTP response headers after 2184.8092ms - 200
+2022-11-23 14:46:30.853 +03:00 [INF] End processing HTTP request after 2210.7496ms - 200
+2022-11-23 14:46:30.906 +03:00 [INF] Executing OkObjectResult, writing value of type 'ModelsDTO.Cars.PaginationCarsDTO'.
+2022-11-23 14:46:30.930 +03:00 [INF] Executed action APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway) in 2317.4338ms
+2022-11-23 14:46:30.931 +03:00 [INF] Executed endpoint 'APIGateway.Controllers.SystemAPIController.GetAllCars (APIGateway)'
+2022-11-23 14:46:30.932 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/api/v1/cars?page=1&size=10&showAll=false - - - 200 - application/json;+charset=utf-8 2433.5883ms
+2022-11-23 14:46:40.256 +03:00 [INF] Application is shutting down...
