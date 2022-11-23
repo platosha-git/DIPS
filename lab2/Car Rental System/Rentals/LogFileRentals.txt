@@ -190,3 +190,35 @@ FROM rental AS r
 2022-11-15 13:13:12.606 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - -
 2022-11-15 13:13:12.766 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 160.7699ms
 2022-11-15 13:18:42.122 +03:00 [INF] Application is shutting down...
+2022-11-22 22:47:16.516 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-22 22:47:16.772 +03:00 [INF] Now listening on: http://localhost:8060
+2022-11-22 22:47:16.778 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-22 22:47:16.779 +03:00 [INF] Hosting environment: Development
+2022-11-22 22:47:16.780 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\Rentals
+2022-11-22 22:47:17.502 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/index.html - -
+2022-11-22 22:47:17.747 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/index.html - - - 200 - text/html;charset=utf-8 252.6303ms
+2022-11-22 22:47:17.791 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/swagger-ui-standalone-preset.js - -
+2022-11-22 22:47:17.791 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/swagger-ui-bundle.js - -
+2022-11-22 22:47:17.797 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/swagger-ui.css - -
+2022-11-22 22:47:17.831 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-22 22:47:17.831 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-22 22:47:17.831 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-22 22:47:17.835 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/swagger-ui-bundle.js - - - 200 1096145 application/javascript 43.1984ms
+2022-11-22 22:47:17.835 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/swagger-ui.css - - - 200 143943 text/css 38.1437ms
+2022-11-22 22:47:17.835 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 43.5034ms
+2022-11-22 22:47:18.190 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - -
+2022-11-22 22:47:18.249 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/favicon-32x32.png - -
+2022-11-22 22:47:18.250 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-11-22 22:47:18.251 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/favicon-32x32.png - - - 200 628 image/png 2.1453ms
+2022-11-22 22:47:18.423 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 232.4076ms
+2022-11-22 22:47:23.373 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/api/v1/rentals - -
+2022-11-22 22:47:23.401 +03:00 [INF] Executing endpoint 'Rentals.Controllers.ApiRentalsController.GetAllCars (Rentals)'
+2022-11-22 22:47:23.424 +03:00 [INF] Route matched with {action = "GetAllCars", controller = "ApiRentals"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCars() on controller Rentals.Controllers.ApiRentalsController (Rentals).
+2022-11-22 22:47:25.297 +03:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r.id, r.car_uid, r.date_from, r.date_to, r.payment_uid, r.rental_uid, r.status, r.username
+FROM rental AS r
+2022-11-22 22:47:25.390 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Rentals.ModelsDB.Rental, Rentals, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-22 22:47:25.443 +03:00 [INF] Executed action Rentals.Controllers.ApiRentalsController.GetAllCars (Rentals) in 2008.3575ms
+2022-11-22 22:47:25.444 +03:00 [INF] Executed endpoint 'Rentals.Controllers.ApiRentalsController.GetAllCars (Rentals)'
+2022-11-22 22:47:25.451 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/api/v1/rentals - - - 200 2661 application/json;+charset=utf-8 2078.1127ms
+2022-11-22 22:47:29.411 +03:00 [INF] Application is shutting down...

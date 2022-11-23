@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using APIGateway.Controllers;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
@@ -26,14 +27,11 @@ namespace APIGateway
                 
             });
             services.AddSwaggerGenNewtonsoftSupport();
+            
+            services.AddScoped<CarsService>();
 
             AddHttpClients(services);
             AddLogging(services, Configuration);
-
-            services.AddControllersWithViews()
-                .AddNewtonsoftJson(options =>
-                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-                );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +41,7 @@ namespace APIGateway
             {
                 app.UseDeveloperExceptionPage();
             }
+
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gateway v1"));
 
@@ -51,6 +50,8 @@ namespace APIGateway
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
 
         private static void AddHttpClients(IServiceCollection services)

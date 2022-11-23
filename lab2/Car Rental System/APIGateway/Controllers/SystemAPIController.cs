@@ -8,9 +8,9 @@ namespace APIGateway.Controllers
     [Route("/api/v1/cars")]
     public class SystemAPIController : ControllerBase
     {
-        private readonly CarsWebController _carsController;
+        private readonly CarsService _carsController;
 
-        public SystemAPIController(CarsWebController carsController)
+        public SystemAPIController(CarsService carsController)
         {
             _carsController = carsController;
         }

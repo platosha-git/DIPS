@@ -4,5 +4,5 @@ namespace APIGateway;
 
 public interface ICarsRepository
 {
-    Task<PaginationCarsDTO> FindAll(int page, int size, bool showAll);
+    Task<PaginationCarsDTO?> FindAll(int page, int size, bool showAll);
 }
