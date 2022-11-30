@@ -28,6 +28,7 @@ namespace APIGateway
             services.AddSwaggerGenNewtonsoftSupport();
             
             services.AddScoped<CarsRepository>();
+            services.AddScoped<RentalsRepository>();
 
             AddHttpClients(services);
             AddLogging(services, Configuration);
@@ -57,7 +58,7 @@ namespace APIGateway
         {
             services.AddHttpClient<ICarsRepository, CarsRepository>();
             // services.AddHttpClient<IPaymentsRepository, PaymentsRepository>();
-            // services.AddHttpClient<IRentalsRepository, RentalsRepository>();    
+            services.AddHttpClient<IRentalsRepository, RentalsRepository>();    
         }
 
         private static void AddLogging(IServiceCollection services, IConfiguration config)

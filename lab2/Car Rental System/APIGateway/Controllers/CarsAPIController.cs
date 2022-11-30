@@ -6,11 +6,11 @@ namespace APIGateway.Controllers
 {
     [ApiController]
     [Route("/api/v1/cars")]
-    public class SystemAPIController : ControllerBase
+    public class CarsAPIController : ControllerBase
     {
         private readonly CarsRepository _carsRepository;
 
-        public SystemAPIController(CarsRepository carsRepository)
+        public CarsAPIController(CarsRepository carsRepository)
         {
             _carsRepository = carsRepository;
         }
