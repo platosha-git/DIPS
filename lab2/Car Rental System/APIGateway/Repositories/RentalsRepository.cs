@@ -25,4 +25,15 @@ public class RentalsRepository : IRentalsRepository
 
         return await response.Content.ReadFromJsonAsync<PaginationRentalsDTO>();
     }
+
+    public async Task<RentalsDTO?> FindByUsernameAndUid(string username, Guid rentalUid)
+    {
+        var query = HttpUtility.ParseQueryString(string.Empty);
+        query["X-User-Name"] = username;
+
+        var response = await _httpClient.GetAsync($"/api/v1/rental/{rentalUid}/?{query}");
+        response.EnsureSuccessStatusCode();
+
+        return await response.Content.ReadFromJsonAsync<RentalsDTO?>();
+    }
 }
