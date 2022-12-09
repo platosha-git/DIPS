@@ -16,5 +16,10 @@ namespace Payments.Controllers
         {
             return await _paymentsRepository.FindByUid(paymentUid);
         }
+        
+        public async Task<Payment> AddPayment(Payment payment)
+        {
+            return await _paymentsRepository.Add(payment);
+        }
     }
 }

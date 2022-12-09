@@ -71,6 +71,7 @@ namespace APIGateway.Controllers
                 throw;
             }
         }
+        */
         
         /// <summary>Забронировать автомобиль</summary>
         /// <param name="X-User-Name">Имя пользователя</param>
@@ -90,7 +91,7 @@ namespace APIGateway.Controllers
                     return BadRequest(ModelState);
                 }
 
-                var response = await _rentalsService.BookCar(username, request);
+                var response = await _rentalsService.RentCar(username, request);
                 return Ok(response);
             }
             catch (HttpRequestException e) when (e.StatusCode == HttpStatusCode.NotFound)
@@ -102,6 +103,6 @@ namespace APIGateway.Controllers
                 _logger.LogError(e, "+ Error occurred trying BookCar!");
                 throw;
             }
-        }*/
+        }
     }
 }

@@ -74,3 +74,16 @@ ORDER BY r.id
 2022-12-04 23:50:00.280 +03:00 [INF] Executed endpoint 'Rentals.Controllers.RentalsAPIController.GetRentalsByUsername (Rentals)'
 2022-12-04 23:50:00.288 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/api/v1/rental/?X-User-Name=Glen - - - 200 775 application/json;+charset=utf-8 2022.8308ms
 2022-12-04 23:50:15.492 +03:00 [INF] Application is shutting down...
+2022-12-09 23:25:23.173 +03:00 [INF] User profile is available. Using 'C:\Users\plato\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-09 23:25:23.356 +03:00 [INF] Now listening on: http://localhost:8060
+2022-12-09 23:25:23.360 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-09 23:25:23.361 +03:00 [INF] Hosting environment: Development
+2022-12-09 23:25:23.361 +03:00 [INF] Content root path: C:\Users\plato\OneDrive\Рабочий стол\BMSTU\1m sem\RSOI\lab2\Car Rental System\Rentals
+2022-12-09 23:25:24.070 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/index.html - -
+2022-12-09 23:25:24.197 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/index.html - - - 200 - text/html;charset=utf-8 130.2408ms
+2022-12-09 23:25:24.431 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - -
+2022-12-09 23:25:24.454 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8060/swagger/favicon-32x32.png - -
+2022-12-09 23:25:24.465 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-12-09 23:25:24.466 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/favicon-32x32.png - - - 200 628 image/png 12.3215ms
+2022-12-09 23:25:24.543 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:8060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 111.6349ms
+2022-12-09 23:27:39.463 +03:00 [INF] Application is shutting down...

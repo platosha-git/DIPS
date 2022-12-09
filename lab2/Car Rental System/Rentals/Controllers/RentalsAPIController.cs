@@ -20,6 +20,22 @@ namespace Rentals.Controllers
             _logger = logger;
         }
 
+        private Rental GetRentalFromDTO(RentalsDTO rentalDTO)
+        {
+            var rental = new Rental()
+            {
+                Id = 0,
+                RentalUid = rentalDTO.RentalUid,
+                Username = rentalDTO.Username,
+                PaymentUid = rentalDTO.PaymentUid,
+                CarUid = rentalDTO.CarUid,
+                DateFrom = rentalDTO.DateFrom,
+                DateTo = rentalDTO.DateTo,
+                Status = rentalDTO.Status
+            };
+            return rental;
+        }
+
         private RentalsDTO? InitRentalsDTO(Rental? rental)
         {
             if (rental == null) return null;
@@ -97,33 +113,21 @@ namespace Rentals.Controllers
                 throw;
             }
         }
+        */
 
         [HttpPost]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(RentalsDTO))]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(RentalsDTO))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Post([FromBody] RentalsDTO rentalDTO)
+        public async Task<IActionResult> CreateRental([FromBody] RentalsDTO rentalDTO)
         {
-            try
-            {
-                var rental = GetRental(rentalDTO);
-                var response = await _rentalsController.AddRental(rental);
+            var rentalToAdd = GetRentalFromDTO(rentalDTO);
+            var addedRental = await _rentalsController.AddRental(rentalToAdd);
 
-                if (response is null)
-                {
-                    return BadRequest();
-                }
-                
-                var header = $"api/v1/rental/{response.Id}";
-                return Created(header, rental);
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(e, "+ Error occurred trying AddRental!");
-                throw;
-            }
+            var response = InitRentalsDTO(addedRental);
+            return Created($"/api/v1/{addedRental.Id}", response);
         }
         
+        /*
         [HttpPatch("{rentalUid:guid}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

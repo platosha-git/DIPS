@@ -21,6 +21,35 @@ public class RentalsService : IRentalsService
         _paymentsRepository = paymentsRepository;
     }
 
+    private RentalsDTO InitRentalsDTO(string username, Guid paymentUid, CreateRentalRequest request, string status)
+    {
+        var rentalDTO = new RentalsDTO()
+        {
+            RentalUid = Guid.NewGuid(),
+            Username = username,
+            PaymentUid = paymentUid,
+            CarUid = request.CarUid,
+            DateFrom = request.DateFrom,
+            DateTo = request.DateTo,
+            Status = status
+        };
+        return rentalDTO;
+    }
+
+    private CreateRentalResponse InitCreateRentalResponse(Guid rentalUid, Guid carUid, 
+        DateTimeOffset dateFrom, DateTimeOffset dateTo)
+    {
+        var response = new CreateRentalResponse()
+        {
+            RentalUid = rentalUid,
+            Status = RentalStatusCreate.InProgress,
+            CarUid = carUid,
+            DateFrom = dateFrom,
+            DateTo = dateTo
+        };
+        return response;
+    }
+
     private RentalResponse GetRentalResponse(RentalsDTO rental)
     {
         var response = new RentalResponse()
@@ -31,6 +60,17 @@ public class RentalsService : IRentalsService
             DateTo = rental.DateTo
         };
         return response;
+    }
+
+    private PaymentInfo InitPaymentInfo(string status, int price)
+    {
+        var paymentInfo = new PaymentInfo()
+        {
+            PaymentUid = Guid.NewGuid(),
+            Status = status,
+            Price = price
+        };
+        return paymentInfo;
     }
 
     private async Task<RentalResponse> AddCarInfoAsync(Guid carUid, RentalResponse rental)
@@ -46,8 +86,21 @@ public class RentalsService : IRentalsService
 
         return rental;
     }
-    
+
     private async Task<RentalResponse> AddPaymentInfoAsync(Guid paymentUid, RentalResponse rental)
+    {
+        var payment = await _paymentsRepository.GetAsyncByUid(paymentUid);
+        rental.Payment = new PaymentInfo()
+        {
+            PaymentUid = payment.PaymentUid,
+            Status = payment.Status,
+            Price = payment.Price
+        };
+
+        return rental;
+    }
+    
+    private async Task<CreateRentalResponse> AddPaymentInfoAsync(Guid paymentUid, CreateRentalResponse rental)
     {
         var payment = await _paymentsRepository.GetAsyncByUid(paymentUid);
         rental.Payment = new PaymentInfo()
@@ -74,28 +127,22 @@ public class RentalsService : IRentalsService
 
         return response;
     }
-    
-    /*public async Task<List<RentalsDTO>?> FindAllByUsername(string username)
-    {
-        var rental = await _rentalsRepository.FindAllByUsername(username);
-    }
 
-    public async Task<RentalsDTO?> FindByUsernameAndUid(string username, Guid rentalUid)
+    public async Task<CreateRentalResponse> RentCar(string username, CreateRentalRequest request)
     {
-        var query = HttpUtility.ParseQueryString(string.Empty);
-        query["X-User-Name"] = username;
+        var carUid = request.CarUid;
+        var car = await _carsRepository.ReserveCar(carUid);
 
-        var response = await _httpClient.GetAsync($"/api/v1/rental/{rentalUid}/?{query}");
-        response.EnsureSuccessStatusCode();
+        var duration = (int) (request.DateTo - request.DateFrom).TotalDays;
+        var newPaymentInfo = InitPaymentInfo("PAID", duration * car.Price);
+        var payment = await _paymentsRepository.CreateAsync(newPaymentInfo);
 
-        return await response.Content.ReadFromJsonAsync<RentalsDTO?>();
+        var newRentalDTO = InitRentalsDTO(username, payment.PaymentUid, request, "IN_PROGRESS");
+        var rental = await _rentalsRepository.CreateAsync(newRentalDTO);
+
+        var response = InitCreateRentalResponse(rental.RentalUid, car.CarUid, request.DateFrom, request.DateTo);
+        await AddPaymentInfoAsync(rental.PaymentUid, response);
+        
+        return response;
     }
-    
-    public async Task<CreateRentalResponse> BookCar(string username, CreateRentalRequest request)
-    {
-        // var response = new CreateRentalResponse();
-        // var newRental = GetRentalFromRequest(request, username);
-        // var createdRental = await _rentalsRepository.CreateRental(newRental);
-    }
-    */
 }

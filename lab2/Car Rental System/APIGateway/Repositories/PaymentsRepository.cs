@@ -21,4 +21,12 @@ public class PaymentsRepository : IPaymentsRepository
 
         return await response.Content.ReadFromJsonAsync<PaymentInfo>();
     }
+
+    public async Task<PaymentInfo> CreateAsync(PaymentInfo paymentInfo)
+    {
+        var response = await _httpClient.PostAsJsonAsync($"/api/v1/payment/", paymentInfo);
+        response.EnsureSuccessStatusCode();
+
+        return await response.Content.ReadFromJsonAsync<PaymentInfo>();
+    }
 }

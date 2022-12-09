@@ -37,14 +37,13 @@ public class RentalsRepository : IRentalsRepository
         response.EnsureSuccessStatusCode();
 
         return await response.Content.ReadFromJsonAsync<RentalsDTO?>();
-    }
-
-    public async Task<RentalsDTO?> CreateRental(RentalsDTO rental)
+    }*/
+    
+    public async Task<RentalsDTO> CreateAsync(RentalsDTO rentalDTO)
     {
-        var response = await _httpClient.PostAsJsonAsync("/api/v1/rental/", rental);
+        var response = await _httpClient.PostAsJsonAsync("/api/v1/rental/", rentalDTO);
         response.EnsureSuccessStatusCode();
 
         return await response.Content.ReadFromJsonAsync<RentalsDTO>();
     }
-    */
 }
