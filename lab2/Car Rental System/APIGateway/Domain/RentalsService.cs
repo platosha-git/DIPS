@@ -131,7 +131,7 @@ public class RentalsService : IRentalsService
     public async Task<CreateRentalResponse> RentCar(string username, CreateRentalRequest request)
     {
         var carUid = request.CarUid;
-        var car = await _carsRepository.ReserveCar(carUid);
+        var car = await _carsRepository.ReserveCar(carUid, false);
 
         var duration = (int) (request.DateTo - request.DateFrom).TotalDays;
         var newPaymentInfo = InitPaymentInfo("PAID", duration * car.Price);
@@ -144,5 +144,25 @@ public class RentalsService : IRentalsService
         await AddPaymentInfoAsync(rental.PaymentUid, response);
         
         return response;
+    }
+
+    public async Task FinishRent(string username, Guid rentalUid)
+    {
+        var rental = await _rentalsRepository.GetAsyncByUsernameAndRentalUid(username, rentalUid);
+        var carUid = rental.CarUid;
+
+        var car = await _carsRepository.ReserveCar(carUid, true);
+        var finishedRental = await _rentalsRepository.ProcessRent(username, rentalUid, "FINISHED");
+    }
+
+    public async Task CancelRent(string username, Guid rentalUid)
+    {
+        var rental = await _rentalsRepository.GetAsyncByUsernameAndRentalUid(username, rentalUid);
+        var carUid = rental.CarUid;
+        var paymentUid = rental.PaymentUid;
+        
+        var car = await _carsRepository.ReserveCar(carUid, true);
+        var canceledRental = await _rentalsRepository.ProcessRent(username, rentalUid, "CANCELED");
+        var canceledPayment = await _paymentsRepository.CancelAsync(paymentUid);
     }
 }

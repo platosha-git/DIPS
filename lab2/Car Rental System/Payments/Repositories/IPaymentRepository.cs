@@ -6,5 +6,6 @@ namespace Payments.Repositories
     {
         Task<Payment> FindByUid(Guid paymentUid);
         Task<Payment> Add(Payment obj);
+        Task Patch(Payment payment);
     }
 }

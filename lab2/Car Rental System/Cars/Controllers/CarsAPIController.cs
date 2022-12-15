@@ -85,10 +85,10 @@ namespace Cars.Controllers
         [HttpPatch("{carUid}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CarResponse))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> ReserveCarByUid(Guid carUid)
+        public async Task<IActionResult> ReserveCarByUid(Guid carUid, bool availability)
         {
             var car = await _carsController.GetCarByUid(carUid);
-            car.Availability = false;
+            car.Availability = availability;
             await _carsController.ReserveCarByUid(car);
             
             var response = InitCarResponse(car);

@@ -62,5 +62,18 @@ namespace Payments.Controllers
             var response = InitPaymentInfo(addedPayment);
             return Created($"/api/v1/{addedPayment.Id}", response);
         }
+        
+        [HttpPatch("{rentalUid}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PaymentInfo))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> CancelRental(Guid rentalUid)
+        {
+            var payment = await _paymentsController.GetPaymentByUid(rentalUid);
+            payment.Status = "CANCELED";
+            await _paymentsController.CancelPayment(payment);
+
+            var response = InitPaymentInfo(payment);
+            return Ok(response);
+        }
     }
 }

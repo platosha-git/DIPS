@@ -52,6 +52,20 @@ namespace Payments.Repositories
             }
         }
 
+        public async Task Patch(Payment payment)
+        {
+            try
+            {
+                _db.Payments.Update(payment);
+                await _db.SaveChangesAsync();
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "+ Error while trying to Patch");
+                throw;
+            }
+        }
+
         public void Dispose()
         {
             _db.Dispose();

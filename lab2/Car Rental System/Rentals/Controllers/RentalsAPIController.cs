@@ -86,8 +86,7 @@ namespace Rentals.Controllers
                 throw;
             }
         }
-        /*
-        
+
         // Glen
         // 8b33afd0-9850-41c8-8325-32b5ea91759c
         [HttpGet("{rentalUid:guid}")]
@@ -113,7 +112,6 @@ namespace Rentals.Controllers
                 throw;
             }
         }
-        */
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(RentalsDTO))]
@@ -127,31 +125,17 @@ namespace Rentals.Controllers
             return Created($"/api/v1/{addedRental.Id}", response);
         }
         
-        /*
-        [HttpPatch("{rentalUid:guid}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [HttpPatch("{username}/{rentalUid}/{status}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(RentalsDTO))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> FinishRent([Required, FromQuery(Name = "X-User-Name")] string username,
-            Guid rentalUid)
+        public async Task<IActionResult> FinishRent(string username, Guid rentalUid, string status)
         {
-            try
-            {
-                var rental = await _rentalsController.GetRentalByRentalUid(username, rentalUid);
-                if (rental == null)
-                {
-                    return NotFound();
-                }
+            var rental = await _rentalsController.GetRentalByRentalUid(username, rentalUid);
+            rental.Status = status;
+            await _rentalsController.FinishRent(rental);
 
-                rental.Status = "FINISHED";
-                await _rentalsController.PatchRental(rental);
-                return Ok();
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(e, "+ Error occurred trying FinishRent!");
-                throw;
-            }
-        }*/
+            var response = InitRentalsDTO(rental);
+            return Ok(response);
+        }
     }
 }

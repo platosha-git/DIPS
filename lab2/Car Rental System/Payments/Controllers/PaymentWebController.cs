@@ -21,5 +21,10 @@ namespace Payments.Controllers
         {
             return await _paymentsRepository.Add(payment);
         }
+
+        public async Task CancelPayment(Payment payment)
+        {
+            await _paymentsRepository.Patch(payment);
+        }
     }
 }
