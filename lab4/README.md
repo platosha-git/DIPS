@@ -1,7 +1,5 @@
 # Лабораторная работа #4
 
-![GitHub Classroom Workflow](../../workflows/GitHub%20Classroom%20Workflow/badge.svg?branch=master)
-
 ## Deploy to Cloud
 
 ### Формулировка
@@ -47,7 +45,3 @@ Kubernetes Cluster, т.е. готовый кластер k8s, предостав
 1. При получении задания у вас создается fork этого репозитория для вашего пользователя.
 2. После того как все тесты успешно завершатся, в Github Classroom на Dashboard будет отмечено успешное выполнение
    тестов.
-
-### Варианты заданий
-
-Распределение вариантов заданий аналогично [ЛР #2](https://github.com/bmstu-rsoi/lab2-template).
